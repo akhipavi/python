@@ -1,0 +1,11 @@
+from tkinter import *
+from tkinter import messagebox
+def buttonTapped():
+    messagebox._show("Message","Button clickeed")
+root =Tk()
+mylabel = Label(root, text = "MYFirstLabel")
+mylabel.pack()
+Button(root,text="Click here",command = buttonTapped).pack()
+Label(root, text = "MySecondLabel").pack()
+Label(root, text = "MyThirdLabel").pack()
+root.mainloop()
